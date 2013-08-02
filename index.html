@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+	<link href="assets/css/hint.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Bootstrap Hint</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a data-toggle="hint" data-trigger="click" data-target="#hint-about" href="#">About</a></li>
+              <li><a data-toggle="hint" data-trigger="click" data-target="#hint-contact" href="#">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+				<li class="divider-vertical" style="margin:0px;"></li>
+				<li id="notifybtn" class="active" ><a data-toggle="hint" data-trigger="click" data-target="#notification-panel" ><i class="icon-globe icon-white"></i></a></li>
+				<li class="divider-vertical" style="margin:0px;"></li>
+				<li><a data-toggle="hint" data-trigger="click" data-target="#chatroom-panel" ><i class="icon-comment icon-white"></i></a></li>
+				<li class="divider-vertical" style="margin:0px;" ></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+	<h1>Bootstrap-hint.js</h1>
+	
+	<div id="hint-about" style="width:300px;" >
+		<span class="hint-header">
+			<span class="hint-title-left">About</span>
+			<span class="hint-title-right"><a href="#" >Settings</a></span>
+			<span class="hint-clear"></span>
+		</span>
+		<span class="hint-content">
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<a data-toggle="hint" title="Use this document as a way to quick start any new project.All you get is this message and a barebones HTML document.">HOVER HINT</a>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			Child Hint With Click Trigger <a data-toggle="hint" data-trigger="click" data-target="#popupb" >child hint</a>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		</span>
+	</div>
+	
+	<div id="hint-contact" style="width:300px;" >
+		<div class="hint-header">
+			<div class="hint-title-left">Contact</div>
+			<div class="hint-title-right"><a href="#" >Settings</a></div>
+			<div class="hint-clear"></div>
+		</div>
+		<span class="hint-content">
+		  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<a data-toggle="hint" title="Use this document as a way to quick start any new project.All you get is this message and a barebones HTML document.">HOVER HINT</a>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		</span>
+	</div>
+	
+	<div id="notification-panel" style="width:300px;">
+		<span class="hint-header">
+			<span class="hint-title-left">Notifications</span>
+			<span class="hint-title-right"><a href="#" >Settings</a></span>
+			<span class="hint-clear"></span>
+		</span>
+		<div class="hint-content" data-scroll="true" style="height:200px;">
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		</div>
+		<span class="hint-footer">
+			<span class="hint-title-center">
+			<a href="#" >See All</a>
+			</span>
+		</span>	
+	</div>
+	
+	<div id="chatroom-panel" style="width:300px;">
+		<span class="hint-header">
+			<span class="hint-title-left">Chatroom</span>
+			<span class="hint-title-right"><a href="#" >Settings</a></span>
+			<span class="hint-clear"></span>
+		</span>
+		<span class="hint-content">
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		</span>
+		<span class="hint-footer">
+			<span class="hint-title-center">
+			<a href="#" >See All</a>
+			</span>
+		</span>	
+	</div>
+	
+	 
+	<div id="popupb" style="width:300px;">
+		<span class="hint-content">
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			Child Hint With Click Trigger <a data-toggle="hint" data-trigger="click" data-target="#popupc" >child hint</a>
+			<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			</span>
+	</div>
+	<div id="popupc" style="width:300px;">
+		<span class="hint-content">
+		  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		</span>
+	</div>
+	  <p>Use this document as a way to quick start any new project.<br> All you get is this <a href="#hint" data-toggle="hint" title="Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.">message</a> and a barebones HTML document.</p>
+	  <p>Use this <a href="#hint" data-toggle="hint" title="Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.">document</a> as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+	  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+	  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+	  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+	  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+		
+		
+	</div> <!-- /container -->
+	
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="jquery/jquery-1.7.2.min.js" ></script>
+	<script type="text/javascript" src="jquery/jquery-ui-1.8.22.custom.min.js" ></script>
+	<script src="assets/js/bootstrap-livequery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+	<script src="assets/js/bootstrap-hint.min.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+	<script src="assets/js/bootstrap-scrollbar.js"></script>
+  </body>
+</html>
